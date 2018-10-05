@@ -10,7 +10,11 @@ export NVM_DIR="$HOME/.nvm"
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools q
+
+# Dot files
+export DOTFILES_HOME=$HOME/dotfiles/.dotfiles/
+export PATH=$HOME/DOTFILES_HOME/webstorm:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -91,5 +95,8 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias fuck="fuck -y"
 eval $(thefuck --alias)
 
-# Others ::::::::
+# Docker ::::::::
 alias docker-pompose="docker run docker/whalesay cowsay cade meus amiguinhos online pra me dar um pouco de crack"
+alias docker_kill_ps="docker kill $(docker ps -q)"
+alias docker_clean_images="docker rmi $(docker images -a -q)"
+alias docker_clean_ps="docker rm $(docker ps --filter=status=exited --filter=status=created -q)"
