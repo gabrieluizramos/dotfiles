@@ -80,11 +80,6 @@ source $ZSH/oh-my-zsh.sh
 alias zshrc="source $HOME/.zshrc"
 alias git="hub"
 
-# Loggi
-alias backend="cd /opt/loggi/ops && git pull && cd /opt/loggi/web && git pull && loggi pip-install -U && loggi pm migrate && loggi run"
-alias backend-clean-install="loggi down && docker rm -f data && loggi up && loggi pip-install && loggi setup-dev-db && loggi pm cep_import"
-alias update-images="docker pull loggi/dev"
-
 # Utils
 # Tree
 
@@ -96,7 +91,17 @@ alias fuck="fuck -y"
 eval $(thefuck --alias)
 
 # Docker ::::::::
-alias docker-pompose="docker run docker/whalesay cowsay cade meus amiguinhos online pra me dar um pouco de crack"
-alias docker_kill_ps="docker kill $(docker ps -q)"
-alias docker_clean_images="docker rmi $(docker images -a -q)"
-alias docker_clean_ps="docker rm $(docker ps --filter=status=exited --filter=status=created -q)"
+alias docker-pompose='docker run docker/whalesay cowsay cade meus amiguinhos online pra me dar um pouco de crack'
+# alias docker_kill='docker kill $(docker ps -q)'
+alias docker_remove_images='docker rmi $(docker images -a -q)'
+alias docker_remove_containers='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+alias docker_stop='docker stop $(docker ps -aq)'
+
+alias docker_reset='docker_stop && docker_remove_containers && docker_remove_images'
+
+# Loggi
+alias backend="cd /opt/loggi/ops && git pull && cd /opt/loggi/web && git pull && loggi pip-install -U && loggi pm migrate && loggi run"
+alias backend_clean_install="loggi down && docker rm -f data && loggi up && loggi pip-install -U && loggi setup-dev-db && loggi pm cep_import"
+alias update_images="docker pull loggi/dev"
+
+alias loggi_restart='docker_reset && update_images && backend_clean_install'
