@@ -11,3 +11,8 @@ fi
 
 echo "Updating Homebrew"
 brew update
+
+# Apps installed via brew
+brew install nvm
+brew install thefuck
+brew install fx

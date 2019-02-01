@@ -5,7 +5,6 @@
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
 export ZSH=/Users/gabrielramos/.oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/Cellar/nvm/0.33.8/nvm.sh"
 
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -105,3 +104,7 @@ alias backend_clean_install="loggi down && docker rm -f data && loggi up && logg
 alias update_images="docker pull loggi/dev"
 
 alias loggi_restart='docker_reset && update_images && backend_clean_install'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
