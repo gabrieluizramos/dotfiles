@@ -19,6 +19,7 @@ brew=(
   "thefuck"
   "fx"
   "git"
+  "hub"
 )
 
 for app in "${brew[@]}"; do
