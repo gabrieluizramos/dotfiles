@@ -13,7 +13,7 @@ fi
 
 
 # Brew apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Installing apps via brew"
+echo "Installing apps with brew"
 brew=(
   "nvm"
   "thefuck"
@@ -27,7 +27,7 @@ for app in "${brew[@]}"; do
 done
 
 # Cask apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Installing apps via brew cask"
+echo "Installing apps with brew cask"
 brew cask
 
 cask=(
