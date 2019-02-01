@@ -18,6 +18,7 @@ brew=(
   "nvm"
   "thefuck"
   "fx"
+  "git"
 )
 
 for app in "${brew[@]}"; do
@@ -37,6 +38,7 @@ cask=(
   "skype"
   "iterm2"
   "visual-studio-code"
+  "gitkraken"
 )
 
 for app in "${cask[@]}"; do
