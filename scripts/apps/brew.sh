@@ -36,6 +36,7 @@ cask=(
   "slack"
   "skype"
   "iterm2"
+  "visual-studio-code"
 )
 
 for app in "${cask[@]}"; do
