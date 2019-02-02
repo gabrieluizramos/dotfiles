@@ -1,6 +1,6 @@
 # .dotfiles
 
-My dotfiles configuration
+My personal macOS dotfiles configuration
 
 ## Install
 
