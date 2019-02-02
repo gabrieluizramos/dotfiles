@@ -1,0 +1,12 @@
+#!/bin/sh
+sudo easy_install pip
+
+echo "Installing pip stuff"
+pip=(
+  "doge"
+)
+
+for app in "${pip[@]}"; do
+  echo "Installing $app"
+  pip install $app
+done
