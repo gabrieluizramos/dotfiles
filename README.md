@@ -6,7 +6,7 @@ My personal macOS dotfiles configuration
 
 Clone this repo at your home path (e.g. ~/) and run
 ```sh
-sh install.sh
+sh setup.sh
 ```
 
-All the installation scripts will run in sequence
+All the installation scripts at *config* folder will run in sequence.

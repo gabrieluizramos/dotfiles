@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Setup macOS preferences (https://ss64.com/osx/defaults.html) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "Setting up macOS preferences"
+
+# Trackpad Preferences ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "Updating trackpad preferences"
+
+# Clicking
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+# Drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
+
+# Dock Preferences ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "Updating dock preferences"
+
+# Remove recent apps from dock
+defaults write com.apple.dock show-recents -bool false
