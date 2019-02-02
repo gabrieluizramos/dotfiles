@@ -35,6 +35,7 @@ cask=(
   "docker"
   "google-chrome"
   "spotify"
+  "stremio"
   "slack"
   "skype"
   "iterm2"
