@@ -1,7 +1,7 @@
-# .dotfiles\
+# .dotfiles
 My personal macOS dotfiles configuration.
 
-> Created and inspired by the help of the repos of [Renato's](https://github.com/renatoagds/dotfiles), [Willian's](https://github.com/willianjusten/dotfiles) and [Mathias'](https://github.com/mathiasbynens/dotfiles) dotfiles.
+> Created and inspired with the help of the repos of [Renato's](https://github.com/renatoagds/dotfiles), [Willian's](https://github.com/willianjusten/dotfiles) and [Mathias'](https://github.com/mathiasbynens/dotfiles) dotfiles.
 
 ## Install
 Clone this repo at your home path (e.g. ~/) and run
