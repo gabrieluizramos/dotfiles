@@ -36,15 +36,16 @@ brew cask
 
 #  Brew Cask apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 cask=(
+  "visual-studio-code"
+  "iterm2"
+  "gitkraken"
   "docker"
   "google-chrome"
+  "firefox"
   "spotify"
   "stremio"
   "slack"
   "skype"
-  "iterm2"
-  "visual-studio-code"
-  "gitkraken"
 )
 
 for app in "${cask[@]}"; do

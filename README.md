@@ -15,7 +15,7 @@ All the installation scripts at **config** folder will run in sequence.
 
 ### Currently installing
 For development environment:
-- [Homebrew](https://brew.sh/) and [cask](http://caskroom.io/)
+- [homebrew](https://brew.sh/) and [cask](http://caskroom.io/)
 - [nvm](https://github.com/creationix/nvm)
 - [thefuck](https://github.com/nvbn/thefuck)
 - [fx](https://github.com/antonmedv/fx)
@@ -32,6 +32,7 @@ For development environment:
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
+- [firefox](https://www.mozilla.org/firefox/)
 
 For comunication:
 - [slack](https://slack.com/)
