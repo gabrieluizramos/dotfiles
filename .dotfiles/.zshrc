@@ -13,7 +13,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools q
 
 # Dot files
 export DOTFILES_HOME=$HOME/dotfiles/.dotfiles/
-export PATH=$HOME/DOTFILES_HOME/webstorm:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
