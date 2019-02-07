@@ -75,35 +75,15 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Aliases :::::::::::::::::::::::::::::::::::::::::::::::::
+# ZSH ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias zshrc="source $HOME/.zshrc"
-alias git="hub"
 
-# Utils
-# Tree
 
-# Plugins ::::::::
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
-# Thefuck (https://github.com/nvbn/thefuck)
-alias fuck="fuck -y"
-eval $(thefuck --alias)
-
-# Docker ::::::::
-alias docker-pompose='docker run docker/whalesay cowsay cade meus amiguinhos online pra me dar um pouco de crack'
-# alias docker_kill='docker kill $(docker ps -q)'
-alias docker_remove_images='docker rmi $(docker images -a -q)'
-alias docker_remove_containers='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
-alias docker_stop='docker stop $(docker ps -aq)'
-
-alias docker_reset='docker_stop && docker_remove_containers && docker_remove_images'
-
-# Loggi
-alias backend="cd /opt/loggi/ops && git pull && cd /opt/loggi/web && git pull && loggi pip-install -U && loggi pm migrate && loggi run"
-alias backend_clean_install="loggi down && docker rm -f data && loggi up && loggi pip-install -U && loggi setup-dev-db && loggi pm cep_import"
-alias update_images="docker pull loggi/dev"
-
-alias loggi_restart='docker_reset && update_images && backend_clean_install'
+# Sources :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+sources=$(find $DOTFILES_HOME/sources -type f)
+for source in $sources; do
+  source $source
+done
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
