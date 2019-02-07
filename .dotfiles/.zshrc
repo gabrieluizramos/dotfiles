@@ -12,7 +12,8 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools q
 
 # Dot files
-export DOTFILES_HOME=$HOME/dotfiles/.dotfiles/
+export DOTFILES_HOME=$HOME/dotfiles/.dotfiles
+export DOTFILES_SOURCES=$DOTFILES_HOME/sources
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -79,7 +80,7 @@ alias zshrc="source $HOME/.zshrc"
 
 
 # Sources :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-sources=$(find $DOTFILES_HOME/sources -type f)
+sources=$(find $DOTFILES_SOURCES -type f)
 for source in $sources; do
   source $source
 done
