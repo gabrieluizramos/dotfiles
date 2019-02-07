@@ -80,9 +80,14 @@ alias zshrc="source $HOME/.zshrc"
 
 
 # Sources :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-sources=$(find $DOTFILES_SOURCES -type f)
+declare -a sources=($(find "$DOTFILES_SOURCES" -type f))
+echo "Checking source files"
+
 for source in $sources; do
-  source $source
+  if [ -r $source ] && [ -f $source ]; then
+    echo "Sourcing $source"
+    source $source
+  fi
 done
 
 export NVM_DIR="$HOME/.nvm"
