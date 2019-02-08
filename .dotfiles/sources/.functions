@@ -9,6 +9,6 @@ server() {
 }
 
 # Kill process using a given port
-kill-local() {
+kill-port() {
   npx kill-port $1
 }
