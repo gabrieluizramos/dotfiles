@@ -13,12 +13,23 @@ else
   brew update
 fi
 
+# Brew tap ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "Tapping repos with brew"
+taps=(
+  "cjbassi/gotop"
+)
+
+for tap in "${taps[@]}"; do
+  echo "Tapping $tap"
+  brew tap $tap
+done
 
 # Brew apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo "Installing apps with brew"
 brew=(
   "nvm"
   "thefuck"
+  "gotop"
   "fx"
   "git"
   "hub"

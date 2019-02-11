@@ -19,6 +19,7 @@ For development environment:
 - [nvm](https://github.com/creationix/nvm)
 - [thefuck](https://github.com/nvbn/thefuck)
 - [fx](https://github.com/antonmedv/fx)
+- [gotopo](https://github.com/cjbassi/gotop)
 - [hub](https://hub.github.com/)
 - [docker](https://www.docker.com/)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
