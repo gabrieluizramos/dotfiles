@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "Setting up git user"
+
+git config --global user.name "Gabriel Ramos"
+git config --global user.email gabriel.luiz.ramos@gmail.com
