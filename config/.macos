@@ -14,9 +14,24 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
+# Menu and Dock Preferences :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo "Updating menu bar and dock preferences"
 
-# Dock Preferences ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Updating dock preferences"
+# General
+defaults write -globalDomain _HIHideMenuBar -bool true
 
-# Remove recent apps from dock
+# Battery
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+# Clock
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+
+# Dock
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock largesize -float 83
+defaults write com.apple.dock magnification -bool false
+defaults write com.apple.dock minimize-to-application -bool false
+defaults write com.apple.dock tilesize -float 49
 defaults write com.apple.dock show-recents -bool false
