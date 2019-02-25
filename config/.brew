@@ -34,6 +34,7 @@ brew=(
   "git"
   "hub"
   "cmatrix"
+  "zsh"
 )
 
 for app in "${brew[@]}"; do
