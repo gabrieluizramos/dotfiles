@@ -2,8 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export USER=$(id -un)
+
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
-export ZSH=/Users/gabrielramos/.oh-my-zsh
+export ZSH=/Users/$USER/.oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
 
 # Android Studio
