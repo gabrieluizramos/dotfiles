@@ -26,7 +26,7 @@ For development environment:
 - [pip](https://pypi.org/project/pip/)
 - [doge](https://pypi.org/project/doge/)
 - [iterm2](https://www.iterm2.com/)
-- [oh-my-zsh](https://ohmyz.sh/)
+- [zsh](https://www.zsh.org/) and [oh-my-zsh](https://ohmyz.sh/)
 - [visual-studio-code](https://code.visualstudio.com/)
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)
