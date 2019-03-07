@@ -58,6 +58,8 @@ cask=(
   "stremio"
   "slack"
   "skype"
+  "coconutbattery"
+  "1password"
 )
 
 for app in "${cask[@]}"; do

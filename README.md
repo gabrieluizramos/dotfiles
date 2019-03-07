@@ -34,6 +34,8 @@ For development environment:
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
 - [firefox](https://www.mozilla.org/firefox/)
+- [coconutbattery](http://macappstore.org/coconutbattery/)
+- [1password](https://1password.com/pt/)
 
 For comunication:
 - [slack](https://slack.com/)
