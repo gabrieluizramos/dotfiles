@@ -2,3 +2,17 @@
 
 # Utils :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+
+# NPX
+# Starts a server
+alias server="npx http-server"
+
+# Kill process using a given port
+kill-port() {
+  npx kill-port $1
+}
+
+# Macbook aliases
+# alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
+alias sleep="pmset displaysleepnow"
+alias lock=sleep
