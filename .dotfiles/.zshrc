@@ -7,6 +7,7 @@ export USER=$(id -un)
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
 export ZSH=/Users/$USER/.oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
+source "$(brew --prefix nvm)/nvm.sh"
 
 # Android Studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
