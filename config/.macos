@@ -17,21 +17,26 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 # Menu and Dock Preferences :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo "Updating menu bar and dock preferences"
 
-# General
+# General (hide menu bar)
 defaults write -globalDomain _HIHideMenuBar -bool true
 
-# Battery
+# Battery (shows percent on menu bar)
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
-# Clock
+# Clock (update clock time format, separator and set as analog)
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm:ss"
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
 defaults write com.apple.menuextra.clock IsAnalog -bool false
 
-# Dock
+# Dock (update autohide, size, magnification and other)
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock largesize -float 83
 defaults write com.apple.dock magnification -bool false
 defaults write com.apple.dock minimize-to-application -bool false
 defaults write com.apple.dock tilesize -float 49
 defaults write com.apple.dock show-recents -bool false
+
+
+# Disable apps dialog and enable installation from everywhere
+sudo spctl --master-disable
+defaults write com.apple.LaunchServices LSQuarantine -bool false
