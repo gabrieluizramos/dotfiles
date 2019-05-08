@@ -61,6 +61,7 @@ cask=(
   "skype"
   "coconutbattery"
   "1password"
+  "flume"
 )
 
 for app in "${cask[@]}"; do

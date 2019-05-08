@@ -45,6 +45,7 @@ For comunication:
 For streaming and fun:
 - [spotify](https://www.spotify.com/)
 - [stremio](https://www.stremio.com/)
+- [flume](https://flumeapp.com/)
 
 
 Also includes some base-configuration files at [.dotfiles folder](.dotfiles)
