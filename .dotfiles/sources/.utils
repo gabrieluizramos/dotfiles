@@ -3,6 +3,11 @@
 # Utils :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
+# Git
+alias clear_branches="git branch | grep -v master | xargs git branch -D"
+alias delete_branches=clear_branches
+alias reset_branches=clear_branches
+
 # NPX
 # Starts a server
 alias server="npx http-server"
