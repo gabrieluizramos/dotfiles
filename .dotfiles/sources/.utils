@@ -9,7 +9,13 @@ alias server="npx http-server"
 
 # Kill process using a given port
 kill-port() {
-  npx kill-port $1
+  port=$1
+  npx kill-port $port
+}
+
+cade-meu-pacote() {
+  pacote=$1
+  curl "http://api.postmon.com.br/v1/rastreio/ect/$pacote" | fx
 }
 
 # Macbook aliases
