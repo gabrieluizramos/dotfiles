@@ -30,6 +30,7 @@ For development environment:
 - [visual-studio-code](https://code.visualstudio.com/)
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)
+- [insomnia](https://insomnia.rest/)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)

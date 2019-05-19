@@ -53,6 +53,7 @@ cask=(
   "gitkraken"
   "docker"
   "google-chrome"
+  "insomnia"
   "firefox"
   "spotify"
   "stremio"
