@@ -8,3 +8,6 @@ alias git="hub"
 # Thefuck
 alias fuck="fuck -y"
 eval $(thefuck --alias)
+
+# Z
+source $Z_PATH/z.sh

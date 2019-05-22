@@ -31,6 +31,7 @@ For development environment:
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)
 - [insomnia](https://insomnia.rest/)
+- [z](https://github.com/rupa/z)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)

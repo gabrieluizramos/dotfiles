@@ -1,22 +1,15 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Paths and variables
 export USER=$(id -un)
 
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
 export ZSH=/Users/$USER/.oh-my-zsh
-export NVM_DIR="$HOME/.nvm"
-source "$(brew --prefix nvm)/nvm.sh"
-
-# Android Studio
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools q
-
-# Dot files
+export NVM_DIR=$HOME/.nvm
 export DOTFILES_HOME=$HOME/dotfiles/.dotfiles
 export DOTFILES_SOURCES=$DOTFILES_HOME/sources
+export Z_PATH=$HOME/z
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
