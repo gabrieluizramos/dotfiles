@@ -1,5 +1,6 @@
 #!/bin/sh
 
-echo "Setting up git user"
-git config --global user.name "Gabriel Ramos"
-git config --global user.email gabriel.luiz.ramos@gmail.com
+echo "Setting up git and configuration"
+
+echo "Linking .gitconfig file"
+ln -sf ~/dotfiles/.dotfiles/symlinks/.gitconfig ~/.gitconfig
