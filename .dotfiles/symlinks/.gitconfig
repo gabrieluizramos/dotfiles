@@ -4,3 +4,9 @@
 
 [push]
 	default = current
+
+[pull]
+	default = current
+
+[core]
+	editor = code --wait
