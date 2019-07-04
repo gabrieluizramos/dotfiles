@@ -10,4 +10,5 @@ alias fuck="fuck -y"
 eval $(thefuck --alias)
 
 # Z
+export Z_PATH=$HOME/z
 source $Z_PATH/z.sh

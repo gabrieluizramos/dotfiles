@@ -5,11 +5,11 @@
 export USER=$(id -un)
 
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
+
 export ZSH=/Users/$USER/.oh-my-zsh
-export NVM_DIR=$HOME/.nvm
+
 export DOTFILES_HOME=$HOME/dotfiles/.dotfiles
 export DOTFILES_SOURCES=$DOTFILES_HOME/sources
-export Z_PATH=$HOME/z
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -86,7 +86,3 @@ for source in $sources; do
     source $source
   fi
 done
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
