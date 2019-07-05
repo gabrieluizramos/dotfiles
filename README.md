@@ -30,6 +30,7 @@ For development environment:
 - [visual-studio-code](https://code.visualstudio.com/)
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)
+- [postman](https://www.getpostman.com/)
 - [insomnia](https://insomnia.rest/)
 - [z](https://github.com/rupa/z)
 

@@ -54,6 +54,7 @@ cask=(
   "docker"
   "google-chrome"
   "insomnia"
+  "postman"
   "firefox"
   "spotify"
   "stremio"
