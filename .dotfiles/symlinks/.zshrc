@@ -6,7 +6,7 @@ export USER=$(id -un)
 
 export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
 
-export ZSH=/Users/$USER/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 export DOTFILES_HOME=$HOME/dotfiles/.dotfiles
 export DOTFILES_SOURCES=$DOTFILES_HOME/sources
