@@ -8,8 +8,10 @@ export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
 
 export ZSH=$HOME/.oh-my-zsh
 
-export DOTFILES_HOME=$HOME/dotfiles/.dotfiles
+export DOTFILES_DIR=$HOME/dotfiles
+export DOTFILES_HOME=$DOTFILES_DIR/.dotfiles
 export DOTFILES_SOURCES=$DOTFILES_HOME/sources
+export PRIVFILES_HOME=$DOTFILES_DIR/privfiles
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

@@ -1,3 +1,4 @@
 #!/bin/sh
 
 export PATH=$PATH:~/Library/Python/3.7/bin
+source $PRIVFILES_HOME/.mercadolivre
