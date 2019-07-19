@@ -4,3 +4,6 @@ echo "Setting up git and configuration"
 
 echo "Linking .gitconfig file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.gitconfig ~/.gitconfig
+
+echo "Linking .npmrc file"
+ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
