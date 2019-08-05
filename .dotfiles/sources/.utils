@@ -24,6 +24,11 @@ cade-meu-pacote() {
   curl "http://api.postmon.com.br/v1/rastreio/ect/$pacote" | fx
 }
 
+google-chrome() {
+  open -a "Google Chrome" $1
+}
+alias chrome=google-chrome
+
 # Macbook aliases
 # alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
 alias sleep="pmset displaysleepnow"
