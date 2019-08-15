@@ -51,3 +51,11 @@ For streaming and fun:
 
 
 Also includes some base-configuration files at [.dotfiles folder](.dotfiles)
+
+
+# Privfiles
+To fetch submodule with private files, run:
+
+```sh
+git submodule update --init
+```
