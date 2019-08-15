@@ -7,3 +7,6 @@ ln -sf ~/dotfiles/.dotfiles/symlinks/.gitconfig ~/.gitconfig
 
 echo "Linking .npmrc file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
+
+echo "Linking /etc/hosts file"
+sudo ln -sf ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
