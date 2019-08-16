@@ -4,7 +4,7 @@
 # Paths and variables
 export USER=$(id -un)
 
-export PATH=$HOME/bin:/usr/local/bin:/opt/loggi/ops/ansible/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH=$HOME/.oh-my-zsh
 
