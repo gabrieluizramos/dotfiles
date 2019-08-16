@@ -88,3 +88,6 @@ for source in $sources; do
     source $source
   fi
 done
+
+autoload -U compinit && compinit
+zmodload -i zsh/complist
