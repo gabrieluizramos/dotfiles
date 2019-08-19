@@ -59,3 +59,9 @@ To fetch submodule with private files, run:
 ```sh
 git submodule update --init
 ```
+
+To update submodule, run:
+
+```sh
+git submodule update --recursive --remote
+```
