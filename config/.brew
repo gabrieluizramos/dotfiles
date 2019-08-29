@@ -1,4 +1,5 @@
 #!/bin/sh
+# source '.dotfiles/sources/.messages'
 
 # Setup Brew (https://brew.sh/) and Brew Cask (http://caskroom.io/) apps ::::::::::::::::::::::::::::::::::::::::::::::
 
