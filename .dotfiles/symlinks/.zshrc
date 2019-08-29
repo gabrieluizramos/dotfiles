@@ -79,15 +79,20 @@ alias zshrc="source $HOME/.zshrc"
 
 
 # Sources :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-declare -a sources=($(find "$DOTFILES_SOURCES" -type f))
-# echo "Checking source files"
+sources() {
+  declare -a sources=($(find "$1" -type f))
+  # echo "Checking source files"
 
-for source in $sources; do
-  if [ -r $source ] && [ -f $source ]; then
-    # echo "Sourcing $source"
-    source $source
-  fi
-done
+  for source in $sources; do
+    if [ -r $source ] && [ -f $source ]; then
+      # echo "Sourcing $source"
+      source $source
+    fi
+  done
+}
+
+sources $DOTFILES_SOURCES/jobs
+sources $DOTFILES_SOURCES
 
 autoload -U compinit && compinit
 zmodload -i zsh/complist
