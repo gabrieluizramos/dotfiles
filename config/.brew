@@ -41,6 +41,17 @@ brew=(
 for app in "${brew[@]}"; do
   echo "Installing $app"
   brew install $app
+
+  # Set some extra configuration based on installed package
+  case $app in
+      "nvm")
+        nvm install node
+        nvm alias default node
+      ;;
+      *)
+        echo "No extra configuration for $app"
+      ;;
+  esac
 done
 
 #  Brew Cask ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
