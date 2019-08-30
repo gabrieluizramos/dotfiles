@@ -1,5 +1,6 @@
 #!/bin/sh
+source '.dotfiles/sources/.messages'
 
 # Git repos ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Clonning git repos"
+echo_arrow "Clonning git repos"
 git clone https://github.com/rupa/z.git ~/z

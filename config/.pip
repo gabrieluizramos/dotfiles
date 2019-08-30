@@ -1,15 +1,17 @@
 #!/bin/sh
+source '.dotfiles/sources/.messages'
 
 # Setup Pip (https://pypi.org/project/pip/) :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo_installing "Installing pip"
 sudo easy_install pip
 
 # Pip stuff :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Installing pip stuff"
+echo_installing "Installing pip stuff"
 pip=(
   "doge"
 )
 
 for app in "${pip[@]}"; do
-  echo "Installing $app"
+  echo_installing "Installing $app"
   pip install $app
 done

@@ -1,32 +1,32 @@
 #!/bin/sh
-# source '.dotfiles/sources/.messages'
+source '.dotfiles/sources/.messages'
 
 # Setup Brew (https://brew.sh/) and Brew Cask (http://caskroom.io/) apps ::::::::::::::::::::::::::::::::::::::::::::::
 
 # Brew ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Setting up Homebrew"
+echo_arrow "Setting up Homebrew"
 if test ! $(which brew); then
-  echo "Installing homebrew"
+  echo_installing "Installing homebrew"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-  echo "Homebrew already instaled"
-  echo "Updating Homebrew"
+  echo_ok "Homebrew already instaled"
+  echo_update "Updating Homebrew"
   brew update
 fi
 
 # Brew tap ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Tapping repos with brew"
+echo_arrow "Tapping repos with brew"
 taps=(
   "cjbassi/gotop"
 )
 
 for tap in "${taps[@]}"; do
-  echo "Tapping $tap"
+  echo_default "Tapping $tap"
   brew tap $tap
 done
 
 # Brew apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Installing apps with brew"
+echo_arrow "Installing apps with brew"
 brew=(
   "nvm"
   "thefuck"
@@ -39,23 +39,24 @@ brew=(
 )
 
 for app in "${brew[@]}"; do
-  echo "Installing $app"
+  echo_installing "Installing $app"
   brew install $app
 
-  # Set some extra configuration based on installed package
+  echo_installing "Checking for extra configuration based for $app"
   case $app in
       "nvm")
         nvm install node
         nvm alias default node
       ;;
       *)
-        echo "No extra configuration for $app"
+        echo_default "No extra configuration for $app"
       ;;
   esac
+  echo_installed "Checking for extra configuration based for $app"
 done
 
 #  Brew Cask ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Installing apps with brew cask"
+echo_arrow "Installing apps with brew cask"
 brew cask
 
 #  Brew Cask apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -78,6 +79,6 @@ cask=(
 )
 
 for app in "${cask[@]}"; do
-  echo "Installing $app"
+  echo_installing "Installing $app"
   brew cask install $app
 done

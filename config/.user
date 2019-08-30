@@ -1,12 +1,13 @@
 #!/bin/sh
+source '.dotfiles/sources/.messages'
 
-echo "Setting up git and configuration"
+echo_arrow "Setting up git and configuration"
 
-echo "Linking .gitconfig file"
+echo_default "Linking .gitconfig file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.gitconfig ~/.gitconfig
 
-echo "Linking .npmrc file"
+echo_default "Linking .npmrc file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
 
-echo "Linking /etc/hosts file"
+echo_default "Linking /etc/hosts file"
 sudo ln -sf ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts

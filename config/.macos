@@ -1,10 +1,11 @@
 #!/bin/sh
+source '.dotfiles/sources/.messages'
 
 # Setup macOS preferences (https://ss64.com/osx/defaults.html) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Setting up macOS preferences"
+echo_arrow "Setting up macOS preferences"
 
 # Trackpad Preferences ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Updating trackpad preferences"
+echo_default "Updating trackpad preferences"
 
 # Clicking
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
@@ -15,7 +16,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
 # Menu and Dock Preferences :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo "Updating menu bar and dock preferences"
+echo_default "Updating menu bar and dock preferences"
 
 # General (hide menu bar)
 defaults write -globalDomain _HIHideMenuBar -bool true
