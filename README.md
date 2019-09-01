@@ -33,6 +33,7 @@ For development environment:
 - [postman](https://www.getpostman.com/)
 - [insomnia](https://insomnia.rest/)
 - [z](https://github.com/rupa/z)
+- [tslide](https://github.com/tslide/tslide)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
