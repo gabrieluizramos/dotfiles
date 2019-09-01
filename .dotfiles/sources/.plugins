@@ -6,8 +6,8 @@
 alias git="hub"
 
 # Thefuck
-alias fuck="fuck -y"
 eval $(thefuck --alias)
+alias fuck="fuck -y"
 
 # Z
 export Z_PATH=/usr/local/etc/profile.d/z.sh
