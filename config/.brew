@@ -47,6 +47,7 @@ nvm_configuration() {
   nvm install node
   nvm alias default node
 
+  echo_installing "Installing tslide"
   cd /usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
   npm i
 }
