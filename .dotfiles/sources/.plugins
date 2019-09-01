@@ -13,5 +13,11 @@ eval $(thefuck --alias)
 export Z_PATH=/usr/local/etc/profile.d/z.sh
 source $Z_PATH
 
-# Other
+# TSlide
+export TSLIDEPATH=/usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
+tslide() { node $TSLIDEPATH $1; }
+alias slide=tslide
+
+
+# Others
 alias please=sudo

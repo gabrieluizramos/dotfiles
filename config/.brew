@@ -18,6 +18,7 @@ fi
 echo_arrow "Tapping repos with brew"
 taps=(
   "cjbassi/gotop"
+  "tslide/tslide https://github.com/tslide/tslide"
 )
 
 for tap in "${taps[@]}"; do
@@ -46,14 +47,8 @@ nvm_configuration() {
   nvm install node
   nvm alias default node
 
-  packages=(
-    "tslide"
-  )
-
-  for package in "${packages[@]}"; do
-    echo_installing "Installing $package"
-    npm i -g $package
-  done
+  cd /usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
+  npm i
 }
 
 check_extra_configurations() {
