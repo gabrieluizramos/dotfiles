@@ -65,9 +65,9 @@ ZSH_THEME="af-magic"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # Check the list at https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-plugins=(
-  git
-)
+# plugins=(
+#   git
+# )
 
 source $ZSH/oh-my-zsh.sh
 
