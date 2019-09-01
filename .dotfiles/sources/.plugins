@@ -10,8 +10,8 @@ alias fuck="fuck -y"
 eval $(thefuck --alias)
 
 # Z
-export Z_PATH=$HOME/z
-source $Z_PATH/z.sh
+export Z_PATH=/usr/local/etc/profile.d/z.sh
+source $Z_PATH
 
 # Other
 alias please=sudo

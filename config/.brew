@@ -36,23 +36,45 @@ brew=(
   "hub"
   "cmatrix"
   "zsh"
+  "z"
 )
 
-for app in "${brew[@]}"; do
-  echo_installing "Installing $app"
-  brew install $app
+# Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+nvm_configuration() {
+  source $(brew --prefix nvm)/nvm.sh
 
-  echo_installing "Checking for extra configuration based for $app"
-  case $app in
+  nvm install node
+  nvm alias default node
+
+  packages=(
+    "tslide"
+  )
+
+  for package in "${packages[@]}"; do
+    echo_installing "Installing $package"
+    npm i -g $package
+  done
+}
+
+check_extra_configurations() {
+  echo_installing "Checking extra configuration for $1"
+
+  case $1 in
       "nvm")
-        nvm install node
-        nvm alias default node
+        nvm_configuration
       ;;
       *)
         echo_default "No extra configuration for $app"
       ;;
   esac
-  echo_installed "Checking for extra configuration based for $app"
+}
+
+for app in "${brew[@]}"; do
+  echo_installing "Installing $app"
+  brew install $app
+
+  check_extra_configurations $app
+  echo_installed "$app installed"
 done
 
 #  Brew Cask ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
