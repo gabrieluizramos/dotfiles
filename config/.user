@@ -10,4 +10,4 @@ echo_default "Linking .npmrc file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
 
 echo_default "Linking /etc/hosts file"
-sudo ln -sf ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
+sudo ln -f ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
