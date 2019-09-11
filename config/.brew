@@ -32,7 +32,7 @@ brew=(
   "nvm"
   "thefuck"
   "gotop"
-  "fx"
+  "fx --ignore-dependencies"
   "git"
   "hub"
   "cmatrix"
@@ -42,7 +42,7 @@ brew=(
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 nvm_configuration() {
-  source $(brew --prefix nvm)/nvm.sh
+  source '.dotfiles/sources/.environment'
 
   nvm install node
   nvm alias default node
