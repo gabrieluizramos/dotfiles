@@ -41,6 +41,10 @@ For general purposes:
 - [coconutbattery](http://macappstore.org/coconutbattery/)
 - [1password](https://1password.com/pt/)
 
+For OS customization:
+- [mas](https://github.com/mas-cli/mas)
+- [irvue](https://irvue.tumblr.com) for Unsplash wallpapers
+
 For comunication:
 - [slack](https://slack.com/)
 - [skype](https://www.skype.com/)

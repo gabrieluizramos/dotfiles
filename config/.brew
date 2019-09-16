@@ -29,6 +29,7 @@ done
 # Brew apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo_arrow "Installing apps with brew"
 brew=(
+  "mas"
   "nvm"
   "thefuck"
   "gotop"
@@ -52,6 +53,17 @@ nvm_configuration() {
   npm i
 }
 
+mas_configuration() {
+  mas_apps=(
+    "Irvue"
+  )
+
+  for app in "${mas_apps[@]}"; do
+    echo_installing $app
+    mas lucky $app
+  done
+}
+
 check_extra_configurations() {
   echo_installing "Checking extra configuration for $1"
 
@@ -59,12 +71,16 @@ check_extra_configurations() {
       "nvm")
         nvm_configuration
       ;;
+      "mas")
+        mas_configuration
+      ;;
       *)
         echo_default "No extra configuration for $app"
       ;;
   esac
 }
 
+# Install brew apps and check for extra configuration :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 for app in "${brew[@]}"; do
   echo_installing "Installing $app"
   brew install $app
