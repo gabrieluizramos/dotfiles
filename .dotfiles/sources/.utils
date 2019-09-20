@@ -1,9 +1,8 @@
 #!/bin/sh
 
 # Utils :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-# Git
+# Clear all branches at git
 alias clear_branches="git branch | grep -v master | xargs git branch -D"
 alias delete_branches=clear_branches
 alias reset_branches=clear_branches
@@ -18,15 +17,15 @@ kill-port() {
   npx kill-port $port
 }
 
+# Finds a package tracked by Correios
 cade-meu-pacote() {
   # Docs: https://postmon.com.br/
   pacote=$1
   curl "http://api.postmon.com.br/v1/rastreio/ect/$pacote" | fx
 }
 
-google-chrome() {
-  open -a "Google Chrome" $1
-}
+# Open file by typing chrome "filename" at terminal
+alias google-chrome="open -a \"Google Chrome\""
 alias chrome=google-chrome
 
 # Macbook aliases
