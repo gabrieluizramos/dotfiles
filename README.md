@@ -34,6 +34,7 @@ For development environment:
 - [insomnia](https://insomnia.rest/)
 - [z](https://github.com/rupa/z)
 - [tslide](https://github.com/tslide/tslide)
+- [HTTPie](https://httpie.org)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)

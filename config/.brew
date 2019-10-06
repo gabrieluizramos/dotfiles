@@ -38,6 +38,7 @@ brew=(
   "cmatrix"
   "zsh"
   "z"
+  "httpie"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
