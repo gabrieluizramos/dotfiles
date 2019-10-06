@@ -10,3 +10,7 @@
 
 # Custom hosts
 127.0.0.1	dev.mercadolivre.com.br
+# Added by Docker Desktop
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
