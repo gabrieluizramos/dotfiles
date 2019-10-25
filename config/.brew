@@ -100,6 +100,8 @@ cask=(
   "iterm2"
   "gitkraken"
   "docker"
+  "sequel-pro"
+  "mysqlworkbench"
   "google-chrome"
   "insomnia"
   "postman"

@@ -35,6 +35,8 @@ For development environment:
 - [z](https://github.com/rupa/z)
 - [tslide](https://github.com/tslide/tslide)
 - [HTTPie](https://httpie.org)
+- [MySQL Workbench](https://www.mysql.com/products/workbench/)
+- [Sequel Pro](https://www.sequelpro.com)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
