@@ -114,6 +114,7 @@ cask=(
   "coconutbattery"
   "1password"
   "flume"
+  "android-file-transfer"
 )
 
 for app in "${cask[@]}"; do

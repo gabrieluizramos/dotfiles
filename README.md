@@ -43,6 +43,7 @@ For general purposes:
 - [firefox](https://www.mozilla.org/firefox/)
 - [coconutbattery](http://macappstore.org/coconutbattery/)
 - [1password](https://1password.com/pt/)
+- [Android File Transfer](https://www.android.com/filetransfer/)
 
 For OS customization:
 - [mas](https://github.com/mas-cli/mas)
