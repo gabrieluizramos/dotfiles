@@ -6,6 +6,7 @@
 alias clear_branches="git branch | grep -v master | xargs git branch -D"
 alias delete_branches=clear_branches
 alias reset_branches=clear_branches
+alias clean="git clean -fd"
 
 # NPX
 # Starts a server
