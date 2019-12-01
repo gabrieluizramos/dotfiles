@@ -31,6 +31,7 @@ echo_arrow "Installing apps with brew"
 brew=(
   "mas"
   "nvm"
+  "composer"
   "thefuck"
   "gotop"
   "fx --ignore-dependencies"
