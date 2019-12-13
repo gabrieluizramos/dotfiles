@@ -116,6 +116,7 @@ cask=(
   "1password"
   "flume"
   "android-file-transfer"
+  "cyberduck"
 )
 
 for app in "${cask[@]}"; do

@@ -38,6 +38,7 @@ For development environment:
 - [HTTPie](https://httpie.org)
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - [Sequel Pro](https://www.sequelpro.com)
+- [CyberDuck](https://cyberduck.io/)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
