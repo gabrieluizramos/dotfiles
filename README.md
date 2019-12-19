@@ -15,7 +15,7 @@ All the installation scripts at **config** folder will run in sequence.
 
 ### Currently installing
 For development environment:
-- [homebrew](https://brew.sh/) and [cask](http://caskroom.io/)
+- [homebrew](https://brew.sh/) and [cask](https://formulae.brew.sh/cask/)
 - [nvm](https://github.com/creationix/nvm)
 - [composer](https://getcomposer.org/)
 - [thefuck](https://github.com/nvbn/thefuck)
