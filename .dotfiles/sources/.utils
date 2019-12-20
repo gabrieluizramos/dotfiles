@@ -2,21 +2,29 @@
 
 # Utils :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+# Aliases :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 # Clear all branches at git
 alias clear_branches="git branch | grep -v master | xargs git branch -D"
 alias delete_branches=clear_branches
 alias reset_branches=clear_branches
 alias clean="git clean -fd"
 
+# Open file by typing chrome "filename"
+alias google-chrome="open -a \"Google Chrome\""
+alias chrome=google-chrome
+
+# Macbook
+# alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
+alias sleep="pmset displaysleepnow"
+alias lock=sleep
+
 # NPX
 # Starts a server
 alias server="npx http-server"
+alias kill-port="npx kill-port"
 
-# Kill process using a given port
-kill-port() {
-  port=$1
-  npx kill-port $port
-}
+# Functions :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Finds a package tracked by Correios
 cade-meu-pacote() {
@@ -25,11 +33,23 @@ cade-meu-pacote() {
   curl "http://api.postmon.com.br/v1/rastreio/ect/$pacote" | fx
 }
 
-# Open file by typing chrome "filename" at terminal
-alias google-chrome="open -a \"Google Chrome\""
-alias chrome=google-chrome
+# Dispatch sequence of requests N times
+machine-curl() {
+  # Request
+  method=$1
+  url=$2
+  payload=$3
 
-# Macbook aliases
-# alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
-alias sleep="pmset displaysleepnow"
-alias lock=sleep
+  # How many times
+  default=10
+  times=${4:=$default}
+
+  for i in {1..${times}}; \
+  do \
+    curl --silent -X ${method} \
+    ${url} \
+    -H 'Content-Type: application/json' \
+    -d ${payload} \
+    | fx . ; \
+  done
+}
