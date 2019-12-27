@@ -38,7 +38,10 @@ machine-curl() {
   # Request
   method=$1
   url=$2
-  payload=$3
+  data=$3
+
+  # Payload
+  payload=${3:-'{}'}
 
   # How many times
   default=10
