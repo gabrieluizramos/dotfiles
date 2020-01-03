@@ -46,6 +46,7 @@ For general purposes:
 - [coconutbattery](http://macappstore.org/coconutbattery/)
 - [1password](https://1password.com/pt/)
 - [Android File Transfer](https://www.android.com/filetransfer/)
+- [Geek Bench](https://www.geekbench.com/)
 
 For OS customization:
 - [mas](https://github.com/mas-cli/mas)
