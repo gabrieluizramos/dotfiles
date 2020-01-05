@@ -21,6 +21,7 @@ For development environment:
 - [thefuck](https://github.com/nvbn/thefuck)
 - [fx](https://github.com/antonmedv/fx)
 - [gotop](https://github.com/cjbassi/gotop)
+- [tree](http://mama.indstate.edu/users/ice/tree/)
 - [hub](https://hub.github.com/)
 - [docker](https://www.docker.com/)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
@@ -39,6 +40,8 @@ For development environment:
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - [Sequel Pro](https://www.sequelpro.com)
 - [CyberDuck](https://cyberduck.io/)
+- [ImageMagick](https://imagemagick.org/)
+- [NGrok](https://ngrok.com/)
 
 For general purposes:
 - [google-chrome](https://www.google.com/chrome/)
