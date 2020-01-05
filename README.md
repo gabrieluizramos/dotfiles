@@ -3,7 +3,7 @@ My personal macOS dotfiles configuration.
 
 > Created and inspired with the help of the repos of [Renato's](https://github.com/renatoagds/dotfiles), [Willian's](https://github.com/willianjusten/dotfiles) and [Mathias'](https://github.com/mathiasbynens/dotfiles) dotfiles.
 
-## Install
+## Installing
 Clone this repo at your `$HOME` path (e.g. ~/) and run
 ```sh
 sh setup.sh
@@ -81,15 +81,19 @@ All the installation scripts at **config** folder will run in sequence.
 
 Also includes some base-configuration files at [.dotfiles folder](.dotfiles)
 
+----------------
 
-# Privfiles
-To fetch submodule with private files, run:
+#### [.privfiles](https://github.com/gabrieluizramos/privfiles)
+Similar to the dotfiles configuration, but with some private stuff using [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+##### Installing and updating
+To fetch it (after installing the main dotfiles configuration) run:
 
 ```sh
 git submodule update --init
 ```
 
-To update submodule, run:
+To update it, run:
 
 ```sh
 git submodule update --recursive --remote
