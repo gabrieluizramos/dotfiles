@@ -4,12 +4,6 @@
 
 # Aliases :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-# Clear all branches at git
-alias clear_branches="git branch | grep -v master | xargs git branch -D"
-alias delete_branches=clear_branches
-alias reset_branches=clear_branches
-alias clean="git clean -fd"
-
 # Open file by typing chrome "filename"
 alias google-chrome="open -a \"Google Chrome\""
 alias chrome=google-chrome

@@ -10,5 +10,14 @@
 
 [core]
 	editor = code --wait
+
 [credential]
 	helper = osxkeychain
+
+[alias]
+  # Last commit's diff
+  last = diff HEAD^ HEAD
+  # Clean file and folders
+  clear = clean -fd
+  # Erase all branches except master
+  erase = "! git branch | grep -v master | xargs git branch -D"
