@@ -10,8 +10,9 @@ alias chrome=google-chrome
 
 # Macbook
 # alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
-alias sleep="pmset displaysleepnow"
-alias lock=sleep
+alias lock="pmset displaysleepnow"
+alias delay=sleep
+alias timeout=sleep
 
 # NPX
 # Starts a server
