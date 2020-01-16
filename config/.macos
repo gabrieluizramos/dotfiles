@@ -16,7 +16,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
 # Menu and Dock Preferences :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo_default "Updating menu bar and dock preferences"
+echo_default "Updating menu bar, dock and finder preferences"
 
 # General (hide menu bar)
 defaults write -globalDomain _HIHideMenuBar -bool true
@@ -37,7 +37,12 @@ defaults write com.apple.dock minimize-to-application -bool false
 defaults write com.apple.dock tilesize -float 49
 defaults write com.apple.dock show-recents -bool false
 
-
 # Disable apps dialog and enable installation from everywhere
 sudo spctl --master-disable
 defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Shows all files in finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# Reset finder
+killall Finder /System/Library/CoreServices/Finder.app

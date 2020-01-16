@@ -44,6 +44,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [CyberDuck](https://cyberduck.io/)
 - [ImageMagick](https://imagemagick.org/)
 - [NGrok](https://ngrok.com/)
+- [FiraCode](https://github.com/tonsky/FiraCode)
 </details>
 
 <details>

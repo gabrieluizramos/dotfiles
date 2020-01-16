@@ -19,6 +19,7 @@ echo_arrow "Tapping repos with brew"
 taps=(
   "cjbassi/gotop"
   "tslide/tslide https://github.com/tslide/tslide"
+  "homebrew/cask-fonts"
 )
 
 for tap in "${taps[@]}"; do
@@ -121,6 +122,7 @@ cask=(
   "cyberduck"
   "geekbench"
   "ngrok"
+  "font-fira-code"
 )
 
 for app in "${cask[@]}"; do
