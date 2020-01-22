@@ -81,7 +81,7 @@
 			<key>ASCII Anti Aliased</key>
 			<true/>
 			<key>ASCII Ligatures</key>
-			<true/>
+			<false/>
 			<key>Ambiguous Double Width</key>
 			<false/>
 			<key>Ansi 0 Color</key>
@@ -1589,16 +1589,16 @@
 	</dict>
 	<key>NoSyncSearchHistory2</key>
 	<array>
+		<string>opsErro</string>
+		<string>icon</string>
+		<string>finder</string>
+		<string>dock</string>
+		<string>iconViewSe</string>
 		<string>faf5b598cf156ea741ef1bad3db98c1e3902f97</string>
 		<string>timeoutqq</string>
 		<string>DropdownItem</string>
 		<string>Dropdoiwn</string>
 		<string>dropdownItem</string>
-		<string>dropdownList</string>
-		<string>2018</string>
-		<string>2019</string>
-		<string>fetched</string>
-		<string>error</string>
 	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>589818688.91248703</real>
@@ -1673,7 +1673,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-16T11:41:37Z</date>
+	<date>2020-01-20T19:20:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
