@@ -31,6 +31,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [doge](https://pypi.org/project/doge/)
 - [iterm2](https://www.iterm2.com/)
 - [zsh](https://www.zsh.org/) and [oh-my-zsh](https://ohmyz.sh/)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [visual-studio-code](https://code.visualstudio.com/)
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)

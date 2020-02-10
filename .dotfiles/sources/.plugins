@@ -20,3 +20,12 @@ alias slide=tslide
 
 # Others
 alias please=sudo
+
+# Installed by Brew
+brew=(
+  zsh-autosuggestions
+)
+
+for plugin in $brew; do
+  source $(brew --prefix)/share/$plugin/$plugin.zsh
+done
