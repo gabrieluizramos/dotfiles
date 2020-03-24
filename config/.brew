@@ -123,6 +123,7 @@ cask=(
   "geekbench"
   "ngrok"
   "font-fira-code"
+  "discord"
 )
 
 for app in "${cask[@]}"; do
