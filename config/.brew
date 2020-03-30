@@ -124,6 +124,7 @@ cask=(
   "ngrok"
   "font-fira-code"
   "discord"
+  "zoomus"
 )
 
 for app in "${cask[@]}"; do

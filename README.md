@@ -71,6 +71,7 @@ All the installation scripts at **config** folder will run in sequence.
   - [slack](https://slack.com/)
   - [skype](https://www.skype.com/)
   - [discord](https://discordapp.com/)
+  - [zoom](https://www.zoom.us/)
   </details>
 
   <details>
