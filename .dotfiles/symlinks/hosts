@@ -9,8 +9,7 @@
 ::1             localhost
 
 # Custom hosts
-127.0.0.1   dev.mercadolivre.com.br
-127.0.0.1   local.adminml.com
+127.0.0.1   dev.local.com.br
 
 # Added by Docker Desktop
 # To allow the same kube context to work on the host and the container:
