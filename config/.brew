@@ -20,6 +20,7 @@ taps=(
   "cjbassi/gotop"
   "tslide/tslide https://github.com/tslide/tslide"
   "homebrew/cask-fonts"
+  "homebrew/cask-drivers"
 )
 
 for tap in "${taps[@]}"; do
@@ -45,6 +46,7 @@ brew=(
   "telnet"
   "imagemagick"
   "tree"
+  "zsh-autosuggestions"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -125,6 +127,7 @@ cask=(
   "font-fira-code"
   "discord"
   "zoomus"
+  "displaylink"
 )
 
 for app in "${cask[@]}"; do
