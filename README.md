@@ -82,6 +82,13 @@ All the installation scripts at **config** folder will run in sequence.
   - [stremio](https://www.stremio.com/)
   - [flume](https://flumeapp.com/)
   </details>
+
+    <details>
+    <summary>Peripherals and drivers</summary>
+
+    - [obinskit](http://en.obins.net/obinskit)
+    - [displaylink](https://www.stremio.com/)
+    </details>
 </details>
 
 Also includes some base-configuration files at [.dotfiles folder](.dotfiles)
