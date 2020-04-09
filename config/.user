@@ -1,7 +1,7 @@
 #!/bin/sh
 source '.dotfiles/sources/.messages'
 
-echo_arrow "Setting up git and configuration"
+echo_arrow "Setting up user configuration"
 
 echo_default "Linking .gitconfig file"
 ln -sf ~/dotfiles/.dotfiles/symlinks/.gitconfig ~/.gitconfig
@@ -11,3 +11,6 @@ ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
 
 echo_default "Linking /etc/hosts file"
 sudo ln -f ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
+
+echo_default "Creating ~/Development folder"
+mkdir ~/Development
