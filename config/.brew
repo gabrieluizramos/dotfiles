@@ -64,6 +64,8 @@ nvm_configuration() {
 mas_configuration() {
   mas_apps=(
     "Irvue"
+    # Adobe Lightroom
+    "1451544217"
   )
 
   for app in "${mas_apps[@]}"; do

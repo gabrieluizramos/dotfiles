@@ -79,6 +79,7 @@ All the installation scripts at **config** folder will run in sequence.
 
   - [spotify](https://www.spotify.com/)
   - [stremio](https://www.stremio.com/)
+  - [lightroom](https://lightroom.adobe.com/)
   </details>
 
     <details>
