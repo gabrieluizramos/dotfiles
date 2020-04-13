@@ -1,0 +1,4 @@
+#!/bin/sh
+
+source $PRIVFILES_HOME/jobs/loft/.auth
+# source $PRIVFILES_HOME/jobs/loft/.scripts
