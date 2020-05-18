@@ -29,18 +29,20 @@ cade-meu-pacote() {
 }
 
 # Dispatch sequence of requests N times
+# To use, simply call it with the arguments like
+# machine-curl GET http://my-url.com 11
 machine-curl() {
   # Request
   method=$1
   url=$2
   data=$3
 
-  # Payload
-  payload=${3:-'{}'}
-
   # How many times
   default=10
-  times=${4:=$default}
+  times=${3:=$default}
+
+  # Payload
+  payload=${4:-'{}'}
 
   for i in {1..${times}}; \
   do \
