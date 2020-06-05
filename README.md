@@ -46,6 +46,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [ImageMagick](https://imagemagick.org/)
 - [NGrok](https://ngrok.com/)
 - [FiraCode](https://github.com/tonsky/FiraCode)
+- [neofetch](https://github.com/dylanaraps/neofetch)
 </details>
 
 <details>

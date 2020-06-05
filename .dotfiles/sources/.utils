@@ -19,6 +19,10 @@ alias timeout=sleep
 alias server="npx http-server"
 alias kill-port="npx kill-port"
 
+# Others
+alias please=sudo
+alias about=neofetch
+
 # Functions :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # Finds a package tracked by Correios

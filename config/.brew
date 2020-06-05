@@ -47,6 +47,7 @@ brew=(
   "imagemagick"
   "tree"
   "zsh-autosuggestions"
+  "neofetch"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

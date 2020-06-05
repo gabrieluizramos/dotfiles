@@ -18,9 +18,6 @@ export TSLIDEPATH=/usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
 tslide() { node $TSLIDEPATH $1; }
 alias slide=tslide
 
-# Others
-alias please=sudo
-
 # Installed by Brew
 brew=(
   zsh-autosuggestions
