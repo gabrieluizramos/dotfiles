@@ -1,3 +1,4 @@
 [submodule "privfiles"]
 	path = privfiles
 	url = https://github.com/gabrieluizramos/privfiles
+  branch = master
