@@ -50,3 +50,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 # Reset finder
 killall Finder /System/Library/CoreServices/Finder.app
+
+# Other apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo_default "Installing other apps"
+xcode-select --install
