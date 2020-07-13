@@ -25,6 +25,21 @@ alias about=neofetch
 
 # Functions :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+# Install every folder inside the current directory as a npm project
+install-repos() {
+  echo_default "Installing all repos in the current directory";
+
+  echo_default "Press enter to continue"
+  read
+
+  for repo in $(ls); do
+    cd $repo;
+    echo_installing $repo
+    npm i
+    cd ..
+  done;
+}
+
 # Finds a package tracked by Correios
 cade-meu-pacote() {
   # Docs: https://postmon.com.br/
