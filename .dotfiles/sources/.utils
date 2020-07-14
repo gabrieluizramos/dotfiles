@@ -22,17 +22,39 @@ alias kill-port="npx kill-port"
 # Others
 alias please=sudo
 alias about=neofetch
+alias lsdir="ls -d */"
 
 # Functions :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+# Waits for user confirmation to continue any execution
+enter-to-continue() {
+  echo_default "Press enter to continue"
+  read
+}
+
+# Clear every folder inside the current directory as a git project
+clear-changes() {
+  echo_default "Clearing changes in the repos inside current directory";
+
+  enter-to-continue
+
+  for repo in $(lsdir); do
+    echo $repo
+    cd $repo;
+    git checkout .
+    git clear
+    git erase
+    cd ..
+  done;
+}
 
 # Install every folder inside the current directory as a npm project
 install-repos() {
   echo_default "Installing all repos in the current directory";
 
-  echo_default "Press enter to continue"
-  read
+  enter-to-continue
 
-  for repo in $(ls); do
+  for repo in $(lsdir); do
     cd $repo;
     echo_installing $repo
     npm i
