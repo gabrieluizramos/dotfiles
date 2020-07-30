@@ -131,6 +131,7 @@ cask=(
   "zoomus"
   "displaylink"
   "obinslab-starter"
+  "logitech-camera-settings"
 )
 
 for app in "${cask[@]}"; do
