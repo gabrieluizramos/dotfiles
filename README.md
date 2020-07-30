@@ -47,6 +47,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [NGrok](https://ngrok.com/)
 - [FiraCode](https://github.com/tonsky/FiraCode)
 - [neofetch](https://github.com/dylanaraps/neofetch)
+- [pyenv](https://github.com/pyenv/pyenv)
 </details>
 
 <details>

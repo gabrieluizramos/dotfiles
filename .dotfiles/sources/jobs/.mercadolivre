@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export PATH=$PATH:~/Library/Python/3.7/bin
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 source $PRIVFILES_HOME/jobs/mercadolivre/.auth
