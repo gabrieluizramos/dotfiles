@@ -87,7 +87,7 @@ All the installation scripts at **config** folder will run in sequence.
     <summary>Peripherals and drivers</summary>
 
     - [obinskit](http://en.obins.net/obinskit)
-    - [displaylink](https://www.stremio.com/)
+    - [displaylink](https://www.displaylink.com/)
     </details>
 </details>
 
