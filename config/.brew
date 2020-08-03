@@ -133,6 +133,7 @@ cask=(
   "displaylink"
   "obinslab-starter"
   "logitech-camera-settings"
+  "kindle"
 )
 
 for app in "${cask[@]}"; do
