@@ -66,6 +66,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [1password](https://1password.com/pt/)
 - [Android File Transfer](https://www.android.com/filetransfer/)
 - [Geek Bench](https://www.geekbench.com/)
+- [Notion](https://www.notion.so/)
 
   <details>
   <summary>Comunication</summary>

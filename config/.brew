@@ -134,6 +134,7 @@ cask=(
   "obinslab-starter"
   "logitech-camera-settings"
   "kindle"
+  "notion"
 )
 
 for app in "${cask[@]}"; do
