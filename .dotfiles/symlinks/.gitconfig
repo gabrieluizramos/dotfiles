@@ -26,3 +26,5 @@
   erase = "! git branch | grep -v master | grep -v $(git current) | xargs git branch -D"
   # Searches for a given term in the previous changes
   search = "! git diff | grep -i"
+  # Return master, pull and erase branches
+  home = "! git checkout master && git pull origin master && git erase"
