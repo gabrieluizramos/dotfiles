@@ -19,7 +19,7 @@
   # Last commit's diff
   last = diff HEAD^ HEAD
   # Clean file and folders
-  clear = clean -fd
+  clear = "! git checkout . && git clean -fd"
   # Get current branch name
   current = "! git rev-parse --abbrev-ref HEAD"
   # Erase all branches except master and current branch
