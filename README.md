@@ -48,6 +48,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [FiraCode](https://github.com/tonsky/FiraCode)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [pyenv](https://github.com/pyenv/pyenv)
+- [wireshark](https://www.wireshark.org/)
 </details>
 
 <details>

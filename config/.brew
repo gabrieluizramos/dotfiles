@@ -135,6 +135,7 @@ cask=(
   "logitech-camera-settings"
   "kindle"
   "notion"
+  "wireshark"
 )
 
 for app in "${cask[@]}"; do
