@@ -56,6 +56,7 @@ All the installation scripts at **config** folder will run in sequence.
 
 - [mas](https://github.com/mas-cli/mas)
 - [irvue](https://irvue.tumblr.com) for Unsplash wallpapers
+- [rectangle](https://rectangleapp.com/)
 </details>
 
 <details>

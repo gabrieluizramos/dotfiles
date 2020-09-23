@@ -136,6 +136,7 @@ cask=(
   "kindle"
   "notion"
   "wireshark"
+  "rectangle"
 )
 
 for app in "${cask[@]}"; do
