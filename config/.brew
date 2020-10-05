@@ -49,6 +49,7 @@ brew=(
   "zsh-autosuggestions"
   "neofetch"
   "pyenv"
+  "gh"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

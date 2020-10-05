@@ -49,6 +49,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [pyenv](https://github.com/pyenv/pyenv)
 - [wireshark](https://www.wireshark.org/)
+- [GitHub CLI](https://cli.github.com/)
 </details>
 
 <details>
