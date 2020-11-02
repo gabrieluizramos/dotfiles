@@ -14,10 +14,14 @@ alias lock="pmset displaysleepnow"
 alias delay=sleep
 alias timeout=sleep
 
-# NPX
-# Starts a server
+# Server and processes
 alias server="npx http-server"
 alias kill-port="npx kill-port"
+is-running() {
+  port=$1
+  echo_default "Checking port: $port"
+  lsof -i :$port
+}
 
 # Others
 alias please=sudo
