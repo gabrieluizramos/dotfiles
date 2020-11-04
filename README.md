@@ -56,7 +56,7 @@ All the installation scripts at **config** folder will run in sequence.
 <summary>OS customization</summary>
 
 - [mas](https://github.com/mas-cli/mas)
-- [irvue](https://irvue.tumblr.com) for Unsplash wallpapers
+- <del>[Irvue](https://irvue.tumblr.com)</del> [Unsplash Wallpapers](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12)
 - [rectangle](https://rectangleapp.com/)
 </details>
 
