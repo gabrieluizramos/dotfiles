@@ -71,6 +71,8 @@ mas_configuration() {
     "1451544217"
     # Unsplash Wallpapers
     "1284863847"
+    # Trello
+    "1278508951"
   )
 
   for app in "${mas_apps[@]}"; do

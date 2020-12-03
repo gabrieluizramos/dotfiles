@@ -70,6 +70,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [Android File Transfer](https://www.android.com/filetransfer/)
 - [Geek Bench](https://www.geekbench.com/)
 - [Notion](https://www.notion.so/)
+- [Trello](https://trello.com/)
 
   <details>
   <summary>Comunication</summary>
