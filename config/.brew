@@ -146,5 +146,5 @@ cask=(
 
 for app in "${cask[@]}"; do
   echo_installing "Installing $app"
-  brew cask install $app
+  brew install --cask $app
 done
