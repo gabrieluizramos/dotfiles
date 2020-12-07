@@ -17,8 +17,6 @@ fi
 # Brew tap ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo_arrow "Tapping repos with brew"
 taps=(
-  "cjbassi/gotop"
-  "tslide/tslide https://github.com/tslide/tslide"
   "homebrew/cask-fonts"
   "homebrew/cask-drivers"
 )
@@ -58,10 +56,6 @@ nvm_configuration() {
 
   nvm install node
   nvm alias default node
-
-  echo_installing "Installing tslide"
-  cd /usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
-  npm i
 }
 
 mas_configuration() {
