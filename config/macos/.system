@@ -2,7 +2,7 @@
 source '.dotfiles/sources/.messages'
 
 # Setup macOS preferences (https://ss64.com/osx/defaults.html) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo_arrow "Setting up macOS preferences"
+echo_arrow "Setting up macOS system preferences"
 
 # Trackpad Preferences ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo_default "Updating trackpad preferences"

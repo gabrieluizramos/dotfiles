@@ -1,0 +1,10 @@
+#!/bin/sh
+source '.dotfiles/sources/.messages'
+
+echo_arrow "Setting up Ubuntu system preferences"
+
+# Dock
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash true
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 35

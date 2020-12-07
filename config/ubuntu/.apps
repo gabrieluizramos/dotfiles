@@ -1,0 +1,40 @@
+#!/bin/sh
+source '.dotfiles/sources/.messages'
+
+sudo apt update
+
+# Snap packages :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo_installing "Installing SnapCraft packages"
+
+snaps=(
+  "--classic code"
+  "1password --edge"
+)
+
+for app in "${snaps[@]}"; do
+  echo_installing "Installing $app"
+  sudo snap $app
+done
+
+
+# .deb packages :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo_installing "Installing .deb packages"
+debs=(
+  # ObinsKit
+  "http://releases.obins.net/occ/linux/deb/ObinsKit_1.1.4_x64.deb"
+  # Chrome
+  "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+)
+
+for deb in "${debs[@]}"; do
+  echo_installing "Downloading $deb"
+  wget -P /tmp/ $deb
+
+  url="$deb"
+  IFS="/"
+  read -a path <<< "$url"
+  pkg=${path[${#path[@]}-1]}
+
+  echo_installing "Installing pkg /tmp/$pkg"
+  sudo apt install /tmp/$pkg
+done

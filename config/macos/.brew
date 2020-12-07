@@ -17,8 +17,6 @@ fi
 # Brew tap ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo_arrow "Tapping repos with brew"
 taps=(
-  "cjbassi/gotop"
-  "tslide/tslide https://github.com/tslide/tslide"
   "homebrew/cask-fonts"
   "homebrew/cask-drivers"
 )
@@ -53,17 +51,6 @@ brew=(
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-nvm_configuration() {
-  source '.dotfiles/sources/.environment'
-
-  nvm install node
-  nvm alias default node
-
-  echo_installing "Installing tslide"
-  cd /usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
-  npm i
-}
-
 mas_configuration() {
   mas_apps=(
     # "Irvue"
@@ -85,9 +72,6 @@ check_extra_configurations() {
   echo_installing "Checking extra configuration for $1"
 
   case $1 in
-      "nvm")
-        nvm_configuration
-      ;;
       "mas")
         mas_configuration
       ;;

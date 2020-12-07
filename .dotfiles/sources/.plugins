@@ -13,11 +13,6 @@ alias fuck="fuck -y"
 export Z_PATH=/usr/local/etc/profile.d/z.sh
 source $Z_PATH
 
-# TSlide
-export TSLIDEPATH=/usr/local/Homebrew/Library/Taps/tslide/homebrew-tslide
-tslide() { node $TSLIDEPATH $1; }
-alias slide=tslide
-
 # Installed by Brew
 brew=(
   zsh-autosuggestions
