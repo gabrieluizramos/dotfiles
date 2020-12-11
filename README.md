@@ -19,6 +19,7 @@ All the installation scripts at **config** folder will run in sequence.
 
 - [homebrew](https://brew.sh/) and [cask](https://formulae.brew.sh/cask/)
 - [nvm](https://github.com/creationix/nvm)
+- [go](https://golang.org/)
 - [composer](https://getcomposer.org/)
 - [thefuck](https://github.com/nvbn/thefuck)
 - [fx](https://github.com/antonmedv/fx)
