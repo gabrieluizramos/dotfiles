@@ -12,5 +12,6 @@ ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
 echo_default "Linking /etc/hosts file"
 sudo ln -f ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
 
-echo_default "Creating ~/Development folder"
-mkdir ~/Development
+echo_default "Creating ~/Development folder structure"
+mkdir -p ~/Development/{personal,caelum,laboratoria}
+mkdir -p ~/Development/go/{bin,pkg,src}

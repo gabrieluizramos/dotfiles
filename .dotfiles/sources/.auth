@@ -1,3 +1,3 @@
 #!/bin/sh
-
+source $PRIVFILES_HOME/personal/.tokens
 export VERDACCIO_NPM_AUTH_TOKEN="BsU+yDbYiXBFBF1KUTsBmwylU8pRR6+yYJE5pApdIUU="
