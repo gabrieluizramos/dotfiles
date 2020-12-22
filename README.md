@@ -51,6 +51,8 @@ All the installation scripts at **config** folder will run in sequence.
 - [pyenv](https://github.com/pyenv/pyenv)
 - [wireshark](https://www.wireshark.org/)
 - [GitHub CLI](https://cli.github.com/)
+- [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
+- [MongoDB Compass](https://www.mongodb.com/products/compass)
 </details>
 
 <details>

@@ -19,6 +19,7 @@ echo_arrow "Tapping repos with brew"
 taps=(
   "homebrew/cask-fonts"
   "homebrew/cask-drivers"
+  "mongodb/brew"
 )
 
 for tap in "${taps[@]}"; do
@@ -49,6 +50,7 @@ brew=(
   "neofetch"
   "pyenv"
   "gh"
+  "mongodb-community"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -127,6 +129,7 @@ cask=(
   "notion"
   "wireshark"
   "rectangle"
+  "mongodb-compass"
 )
 
 for app in "${cask[@]}"; do
