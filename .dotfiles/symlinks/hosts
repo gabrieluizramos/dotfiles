@@ -9,8 +9,8 @@
 ::1             localhost
 
 # Custom hosts
-127.0.0.1   dev.local.com.br
-127.0.0.1   dev.loft.com.br
+127.0.0.1   dev.local
+127.0.0.1   dev.pluto.tv
 
 127.0.0.1 host.docker.internal
 # Added by Docker Desktop
