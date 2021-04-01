@@ -34,6 +34,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [zsh](https://www.zsh.org/) and [oh-my-zsh](https://ohmyz.sh/)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [visual-studio-code](https://code.visualstudio.com/)
+- [Goland](https://www.jetbrains.com/go/)
 - [git](https://git-scm.com/)
 - [gitkraken](https://www.gitkraken.com/)
 - [postman](https://www.getpostman.com/)
@@ -53,6 +54,7 @@ All the installation scripts at **config** folder will run in sequence.
 - [GitHub CLI](https://cli.github.com/)
 - [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
+- [Datagrip](https://www.jetbrains.com/datagrip/)
 </details>
 
 <details>
