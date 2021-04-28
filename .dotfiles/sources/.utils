@@ -59,10 +59,8 @@ install-repos() {
   enter-to-continue
 
   for repo in $(lsdir); do
-    cd $repo;
     echo_installing $repo
-    npm i
-    cd ..
+    npm --prefix $repo install
   done;
 }
 
