@@ -7,7 +7,7 @@ source '.dotfiles/sources/.messages'
 echo_arrow "Setting up Homebrew"
 if test ! $(which brew); then
   echo_installing "Installing homebrew"
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo_check "Homebrew already instaled"
   echo_update "Updating Homebrew"
