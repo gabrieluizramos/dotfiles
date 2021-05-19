@@ -13,6 +13,8 @@ alias chrome=google-chrome
 alias lock="pmset displaysleepnow"
 alias delay=sleep
 alias timeout=sleep
+alias today="date +%F"
+alias todaybrl="date +%d/%m/%y"
 
 # Server and processes
 alias server="npx http-server"
