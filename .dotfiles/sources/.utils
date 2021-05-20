@@ -98,3 +98,9 @@ machine-curl() {
     | fx . ; \
   done
 }
+
+# Print variables with grep filtering
+variables() {
+  filter=$1
+  env | grep $filter
+}
