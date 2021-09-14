@@ -51,6 +51,7 @@ brew=(
   "pyenv"
   "gh"
   "mongodb-community"
+  "minikube"
 )
 
 # Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -133,6 +134,8 @@ cask=(
   "rectangle"
   "mongodb-compass"
   "datagrip"
+  "raycast"
+  "hazeover"
 )
 
 for app in "${cask[@]}"; do

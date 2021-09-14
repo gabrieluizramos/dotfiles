@@ -104,3 +104,8 @@ variables() {
   filter=$1
   env | grep $filter
 }
+
+# word-count-at() {
+#   path=$1
+#   cat ${path} | wc -w
+# }
