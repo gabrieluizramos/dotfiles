@@ -4,5 +4,5 @@
 files=$(find ./config -type f)
 
 for setup in $files; do
-    sh $setup
+  sh $setup
 done
