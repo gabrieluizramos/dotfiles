@@ -10,136 +10,19 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo_check "Homebrew already instaled"
-  echo_update "Updating Homebrew"
-  brew update
 fi
 
-# Brew tap ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo_arrow "Tapping repos with brew"
-taps=(
-  "homebrew/cask-fonts"
-  "homebrew/cask-drivers"
-  "mongodb/brew"
-)
+echo_update "Updating Homebrew"
+brew update
 
-for tap in "${taps[@]}"; do
-  echo_default "Tapping $tap"
-  brew tap $tap
-done
+echo_update "Installing bundler"
+brew bundle
 
-# Brew apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo_arrow "Installing apps with brew"
-brew=(
-  "mas"
-  "nvm"
-  "golang"
-  "composer"
-  "thefuck"
-  "gotop"
-  "fx --ignore-dependencies"
-  "git"
-  "hub"
-  "cmatrix"
-  "zsh"
-  "z"
-  "httpie"
-  "telnet"
-  "imagemagick"
-  "tree"
-  "zsh-autosuggestions"
-  "neofetch"
-  "pyenv"
-  "gh"
-  "mongodb-community"
-  "minikube"
-)
+echo_update "Installing Brewfile"
+brew bundle install
 
-# Custom configuration for brew apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-mas_configuration() {
-  mas_apps=(
-    # Adobe Lightroom
-    "1451544217"
-    # Unsplash Wallpapers
-    "1284863847"
-    # Trello
-    "1278508951"
-    # Flow - Focus & Pomodoro Timer
-    "1423210932"
-  )
+echo_update "Cleaning up stuff"
+brew cleanup
 
-  for app in "${mas_apps[@]}"; do
-    echo_installing $app
-    mas lucky $app
-  done
-}
-
-check_extra_configurations() {
-  echo_installing "Checking extra configuration for $1"
-
-  case $1 in
-      "mas")
-        mas_configuration
-      ;;
-      *)
-        echo_default "No extra configuration for $app"
-      ;;
-  esac
-}
-
-# Install brew apps and check for extra configuration :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-for app in "${brew[@]}"; do
-  echo_installing "Installing $app"
-  brew install $app
-
-  check_extra_configurations $app
-  echo_installed "$app installed"
-done
-
-#  Brew Cask ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo_arrow "Installing apps with brew cask"
-brew cask
-
-#  Brew Cask apps :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-cask=(
-  "visual-studio-code"
-  "goland"
-  "iterm2"
-  "gitkraken"
-  "docker"
-  "sequel-pro"
-  "mysqlworkbench"
-  "google-chrome"
-  "insomnia"
-  "postman"
-  "firefox"
-  "spotify"
-  "stremio"
-  "slack"
-  "skype"
-  "coconutbattery"
-  "1password"
-  "android-file-transfer"
-  "cyberduck"
-  "geekbench"
-  "ngrok"
-  "font-fira-code"
-  "discord"
-  "zoomus"
-  "displaylink"
-  "obinskit"
-  "logitech-camera-settings"
-  "kindle"
-  "notion"
-  "wireshark"
-  "rectangle"
-  "mongodb-compass"
-  "datagrip"
-  "raycast"
-  "hazeover"
-  "another-redis-desktop-manager"
-)
-
-for app in "${cask[@]}"; do
-  echo_installing "Installing $app"
-  brew install --cask $app
-done
+echo_update "Let's check the doctor"
+brew doctor
