@@ -54,3 +54,8 @@ killall Finder /System/Library/CoreServices/Finder.app
 # Other apps ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo_default "Installing other apps"
 xcode-select --install
+
+
+# General updates :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo_default "Installing SO updates"
+softwareupdate -ia --verbose
