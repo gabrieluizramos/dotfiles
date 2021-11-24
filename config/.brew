@@ -136,6 +136,7 @@ cask=(
   "datagrip"
   "raycast"
   "hazeover"
+  "another-redis-desktop-manager"
 )
 
 for app in "${cask[@]}"; do
