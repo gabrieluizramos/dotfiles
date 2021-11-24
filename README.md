@@ -55,6 +55,10 @@ All the installation scripts at **config** folder will run in sequence.
 - [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
 - [Datagrip](https://www.jetbrains.com/datagrip/)
+- [AnotherRedisDesktopManager](https://github.com/qishibo/AnotherRedisDesktopManager/)
+- [minikube / kubectl](https://minikube.sigs.k8s.io/docs/start/)
+- [kubectx + kubens](https://github.com/ahmetb/kubectx)
+- [kubetail](https://github.com/johanhaleby/kubetail)
 </details>
 
 <details>
