@@ -114,8 +114,6 @@ cask "iterm2"
 cask "kindle"
 # Sound clear in online meetings
 cask "krisp"
-# Provides access to camera controls
-cask "logitech-camera-settings"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place

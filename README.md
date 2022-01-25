@@ -104,7 +104,6 @@ All the installation scripts at **config** folder will run in sequence.
 
     - [obinskit](http://en.obins.net/obinskit)
     - [displaylink](https://www.displaylink.com/)
-    - [logitech-camera-settings](https://support.logi.com/hc/en-us/articles/360024692954--Downloads-HD-Webcam-C270)
     </details>
 </details>
 
