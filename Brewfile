@@ -15,6 +15,8 @@ brew "circleci"
 brew "cmatrix"
 # Dependency Manager for PHP
 brew "composer"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # Command-line JSON processing tool
 brew "fx"
 # GitHub command-line tool
