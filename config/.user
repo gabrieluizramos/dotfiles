@@ -12,6 +12,10 @@ ln -sf ~/dotfiles/.dotfiles/symlinks/.npmrc ~/.npmrc
 echo_default "Linking /etc/hosts file"
 sudo ln -f ~/dotfiles/.dotfiles/symlinks/hosts /etc/hosts
 
+echo_default "Linking AWS CLI files"
+ln -sf ~/dotfiles/privfiles/.aws/config ~/.aws/config
+ln -sf ~/dotfiles/privfiles/.aws/credentials ~/.aws/credentials
+
 echo_default "Creating ~/Development folder structure"
-mkdir -p ~/Development/{personal,laboratoria}
+mkdir -p ~/Development/{personal,laboratoria,pluto-tv}
 mkdir -p ~/Development/go/{bin,pkg,src}
