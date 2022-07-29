@@ -17,7 +17,7 @@ brew "cmatrix"
 brew "composer"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
-# Command-line JSON processing tool
+# Terminal JSON viewer
 brew "fx"
 # GitHub command-line tool
 brew "gh"
@@ -95,8 +95,6 @@ cask "discord"
 cask "displaylink"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Tool for using an iPad as a second display
-cask "duet"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
@@ -106,6 +104,8 @@ cask "geekbench"
 cask "gitkraken"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Windows manager and desktop organizer
 cask "hazeover"
 # HTTP and GraphQL Client
@@ -116,6 +116,8 @@ cask "iterm2"
 cask "kindle"
 # Sound clear in online meetings
 cask "krisp"
+# Kubernetes IDE
+cask "lens"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
@@ -130,8 +132,6 @@ cask "ngrok"
 cask "notion"
 # Software for Anne Pro and Anne Pro 2
 cask "obinskit"
-# Open-source software for live streaming and screen recording
-cask "obs"
 # Zero trust network as a service client
 cask "perimeter81"
 # Collaboration platform for API development
