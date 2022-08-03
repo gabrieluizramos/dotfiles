@@ -7,8 +7,12 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "johanhaleby/kubetail"
 tap "mongodb/brew"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Enables you to reproduce the CircleCI environment locally
 brew "circleci"
 # Console Matrix
@@ -17,6 +21,16 @@ brew "cmatrix"
 brew "composer"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Terminal JSON viewer
 brew "fx"
 # GitHub command-line tool
@@ -29,6 +43,8 @@ brew "git"
 brew "git-crypt"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Terminal based graphical activity monitor inspired by gtop and vtop
 brew "gotop"
 # Kubernetes package manager
@@ -39,6 +55,8 @@ brew "httpie"
 brew "hub"
 # Toolkit for embedding hypervisor capabilities in your application
 brew "hyperkit", link: false
+# Database of common MIME types
+brew "shared-mime-info"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Tools and libraries to manipulate images in many formats
@@ -160,5 +178,6 @@ cask "zoom"
 cask "zoomus"
 mas "Adobe Lightroom", id: 1451544217
 mas "Flow", id: 1423210932
+mas "Notability", id: 360593530
 mas "Trello", id: 1278508951
 mas "Unsplash Wallpapers", id: 1284863847
