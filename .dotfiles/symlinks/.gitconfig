@@ -1,21 +1,36 @@
+# User ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 [user]
 	name = gabrieluizramos
 	email = gabriel.luiz.ramos@gmail.com
 
-[push]
-	default = current
+[credential]
+	helper = osxkeychain
+
+# Workflow ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+[core]
+	editor = code --wait
+	ignorecase = false
+
+[diff]
+  tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 
 [pull]
 	default = current
 	ff = only
 
-[core]
-	editor = code --wait
-	ignorecase = false
+[push]
+	default = current
 
-[credential]
-	helper = osxkeychain
+[merge]
+  tool = vscode
 
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+
+# Custom ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 [alias]
   # Last commit's diff
   last = diff HEAD^ HEAD
