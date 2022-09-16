@@ -69,8 +69,12 @@ brew "kubectx"
 brew "mas"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# MongoDB Shell to connect, configure, query, and work with your MongoDB database
+brew "mongosh"
 # Fast, highly customisable system info script
 brew "neofetch"
+# HTTP/2 C Library
+brew "nghttp2"
 # Manage multiple Node.js versions
 brew "nvm"
 # Python version management
@@ -103,6 +107,8 @@ cask "android-file-transfer"
 cask "another-redis-desktop-manager"
 # Web browser focusing on privacy
 cask "brave-browser"
+# Tool to remove unnecessary files and folders from disk
+cask "cleanmymac"
 # Tool to show live information about the batteries in various devices
 cask "coconutbattery"
 # Server and cloud storage browser
