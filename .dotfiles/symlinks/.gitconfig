@@ -44,3 +44,8 @@
   search = "! git diff | grep -i"
   # Return master, pull and erase branches
   home = "! git checkout master && git pull origin master && git erase"
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
