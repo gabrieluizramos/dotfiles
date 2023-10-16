@@ -9,9 +9,9 @@ alias git="hub"
 eval $(thefuck --alias)
 alias fuck="fuck -y"
 
-# Z
-export Z_PATH=/usr/local/etc/profile.d/z.sh
-source $Z_PATH
+# # Z
+# export Z_PATH=/usr/local/etc/profile.d/z.sh
+# source $Z_PATH
 
 # Installed by Brew
 brew=(
