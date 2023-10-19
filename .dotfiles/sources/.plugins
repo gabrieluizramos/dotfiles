@@ -5,10 +5,6 @@
 # Hub
 alias git="hub"
 
-# Thefuck
-eval $(thefuck --alias)
-alias fuck="fuck -y"
-
 # # Z
 # export Z_PATH=/usr/local/etc/profile.d/z.sh
 # source $Z_PATH

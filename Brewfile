@@ -81,8 +81,6 @@ brew "nvm"
 brew "pyenv"
 # User interface to the TELNET protocol
 brew "telnet"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Download YouTube videos from the command-line
