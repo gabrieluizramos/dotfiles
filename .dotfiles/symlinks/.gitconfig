@@ -30,6 +30,9 @@
 [mergetool "vscode"]
   cmd = code --wait $MERGED
 
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+
 # Custom ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 [alias]
   # Last commit's diff

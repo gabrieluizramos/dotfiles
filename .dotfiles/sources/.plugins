@@ -12,6 +12,7 @@ alias git="hub"
 # Installed by Brew
 brew=(
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 for plugin in $brew; do
