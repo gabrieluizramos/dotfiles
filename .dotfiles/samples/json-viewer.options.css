@@ -1,0 +1,39 @@
+body {
+  background: #2d3441;
+}
+
+.CodeMirror {
+  font-family: 'Fira Code';
+  font-size: 16px;
+  line-height: 1.5em;
+  background: #2d3441;
+}
+
+.cm-s-default.CodeMirror-wrap pre {
+  color: #eceff5;
+}
+
+.CodeMirror-gutters {
+  background: #2d3441;
+  border-right-color: #49546a;
+}
+
+.cm-s-default .cm-operator, .cm-s-default .cm-property, .cm-s-default .cm-punctuation, .cm-s-default .cm-variable {
+	color: #7db3b4;
+}
+
+.cm-s-default .cm-string, .cm-s-default .cm-string-2 {
+	color: #92B682;
+}
+
+.cm-s-default .cm-atom {
+  color: #79a0c3;
+}
+
+.cm-s-default .cm-number {
+	color: #b085a7;
+}
+
+.CodeMirror-linenumber {
+	color: #4a566c;
+}
