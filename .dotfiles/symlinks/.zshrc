@@ -96,3 +96,15 @@ sources $DOTFILES_SOURCES
 
 autoload -U compinit && compinit
 zmodload -i zsh/complist
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/gabrieluizramos/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/gabrieluizramos/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/gabrieluizramos/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/gabrieluizramos/google-cloud-sdk/completion.zsh.inc'; fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export _JAVA_OPTIONS=-Dapplication.log.location=./build/logs

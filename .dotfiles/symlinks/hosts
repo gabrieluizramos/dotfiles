@@ -17,3 +17,5 @@
 # To allow the same kube context to work on the host and the container:
 127.0.0.1 kubernetes.docker.internal
 # End of section
+
+64.30.233.84	connect.cbsinteractive.com ###Cisco AnyConnect VPN client modified this file. Please do not modify contents until this comment is removed.
