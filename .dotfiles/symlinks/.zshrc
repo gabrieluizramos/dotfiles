@@ -1,7 +1,12 @@
 # Paths and variables
 export USER=$(id -un)
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/opt/homebrew/bin:/usr/local/bin:$PATH
+
+# SSH Agent from 1Password
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+export PATH="/opt/homebrew/sbin:$PATH"
+
 
 export ZSH=$HOME/.oh-my-zsh
 
