@@ -1,18 +1,9 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
 tap "johanhaleby/kubetail"
 tap "mongodb/brew"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Enables you to reproduce the CircleCI environment locally
 brew "circleci"
 # Console Matrix
@@ -21,8 +12,6 @@ brew "cmatrix"
 brew "composer"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
-# GNU Ubiquitous Intelligent Language for Extensions
-brew "guile"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # OpenType text shaping engine
@@ -47,14 +36,14 @@ brew "go"
 brew "gobject-introspection"
 # Terminal based graphical activity monitor inspired by gtop and vtop
 brew "gotop"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
 # Kubernetes package manager
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
-# Toolkit for embedding hypervisor capabilities in your application
-brew "hyperkit", link: false
 # Database of common MIME types
 brew "shared-mime-info"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
@@ -79,18 +68,22 @@ brew "nghttp2"
 brew "nvm"
 # Python version management
 brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # User interface to the TELNET protocol
 brew "telnet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Tracks most-used directories to make cd smarter
 brew "z"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Tail logs from multiple Kubernetes pods at the same time
 brew "johanhaleby/kubetail/kubetail"
 # High-performance, schema-free, document-oriented database
@@ -113,9 +106,7 @@ cask "coconutbattery"
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
-# Drivers for DisplayLink docks, adapters and monitors
-cask "displaylink"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Web browser
 cask "firefox"
@@ -128,32 +119,24 @@ cask "gitkraken"
 cask "google-chrome"
 # Client for the Google Drive storage service
 cask "google-drive"
-# Windows manager and desktop organizer
+# Windows manager and desktop organiser
 cask "hazeover"
 # HTTP and GraphQL Client
 cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Interface for reading and syncing eBooks
-cask "kindle"
-# Sound clear in online meetings
-cask "krisp"
 # Kubernetes IDE
 cask "lens"
-# Provides updates to various Microsoft products
-cask "microsoft-auto-update"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
-# Explore and manipulate your MongoDB data
+# Interactive tool for analyzing MongoDB data
 cask "mongodb-compass"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# App to write, plan, collaborate, and get organized
+# App to write, plan, collaborate, and get organised
 cask "notion"
-# Software for Anne Pro and Anne Pro 2
-cask "obinskit"
+# Calendar for professionals and teams
+cask "notion-calendar"
 # Zero trust network as a service client
 cask "perimeter81"
 # Collaboration platform for API development
@@ -162,8 +145,6 @@ cask "postman"
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# MySQL/MariaDB database management platform
-cask "sequel-pro"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Team communication and collaboration software
@@ -174,14 +155,12 @@ cask "spotify"
 cask "tunnelblick"
 # Open-source code editor
 cask "visual-studio-code"
-# Network protocol analyzer
-cask "wireshark"
 # Video communication and virtual meeting platform
 cask "zoom"
-# Temporary makeshift alias for the video communication tool Zoom
-cask "zoomus"
 mas "Adobe Lightroom", id: 1451544217
-mas "Flow", id: 1423210932
-mas "Notability", id: 360593530
-mas "Trello", id: 1278508951
-mas "Unsplash Wallpapers", id: 1284863847
+mas "DaVinci Resolve", id: 571213070
+mas "GarageBand", id: 682658836
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
