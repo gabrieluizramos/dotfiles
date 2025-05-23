@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+OPSCUES_DIR=/Users/gabrieluizramos/Development/appcues/opscues
+export PATH=$OPSCUES_DIR:$PATH
+source $PRIVFILES_HOME/jobs/appcues/.scripts
