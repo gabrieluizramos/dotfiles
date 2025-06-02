@@ -73,6 +73,7 @@ ZSH_THEME="af-magic"
 plugins=(
   git
   z
+  direnv
 )
 
 source $ZSH/oh-my-zsh.sh

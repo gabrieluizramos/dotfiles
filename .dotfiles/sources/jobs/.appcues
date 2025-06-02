@@ -5,4 +5,6 @@ eval "$(rbenv init -)"
 
 OPSCUES_DIR=/Users/gabrieluizramos/Development/appcues/opscues
 export PATH=$OPSCUES_DIR:$PATH
+
+source $PRIVFILES_HOME/jobs/appcues/.auth
 source $PRIVFILES_HOME/jobs/appcues/.scripts
