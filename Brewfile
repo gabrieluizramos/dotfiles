@@ -158,9 +158,8 @@ cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Adobe Lightroom", id: 1451544217
+mas "Flow", id: 1423210932
+mas "Notability", id: 360593530
+mas "Trello", id: 1278508951
+mas "Unsplash Wallpapers", id: 1284863847
 mas "DaVinci Resolve", id: 571213070
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
